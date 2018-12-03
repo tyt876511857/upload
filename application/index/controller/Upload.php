@@ -99,7 +99,7 @@ class Upload
                         $arr['part_'.$index] = md5_file($chunk_file_pre.$index);
                     }
                 }
-                renderJson('0','file not exits',$arr);
+                renderJson('0','success',$arr);
             }else{
                 renderJson('400','file not exits','chunk_'.$chunk);
             }
